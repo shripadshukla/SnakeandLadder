@@ -4,13 +4,12 @@ public class SnakeAndLadder {
 
 	public static void main(String []args) {
 
-		int dice = (int) Math.floor(Math.random() * 10) % 7;
-		
 		int dicepos=0;
 		
-		if (dice == 0)
-			System.out.println("No movements");
+		for( dicepos=1; dicepos<=100; dicepos++) {
 		
+		int dice = (int) Math.floor(Math.random() * 10) % 7;
+
 		switch (dice) {
 		
 		case 1:
@@ -63,7 +62,9 @@ public class SnakeAndLadder {
 			break;
 		}
 		
-		dicepos = dicepos+dice;
+		//dicepos = dicepos+dice;
+		
+		}
 	}
 
 }
